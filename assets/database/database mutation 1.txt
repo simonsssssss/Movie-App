@@ -1,0 +1,112 @@
+mutation {
+	addMovie(
+	  title: "Shrek",
+	  description:
+		"A mean lord exiles fairytale creatures to the swamp of a grumpy ogre, who must go on a quest and rescue a princess for the lord in order to get his land back.",
+	  releaseYear: 2001,
+	  directors: ["Andrew Adamson", "Vicky Jenson"],
+	  topCast: ["Cameron Diaz", "Eddie Murphy", "Mike Myers"],
+	  countries: ["United States", "Canada", "Sweden"],
+	  trailerEmbedUrl: "https://www.youtube.com/embed/CwXOrWvPBPk") {
+		id
+	}
+	_1: addMovie(
+	  title: "Saving Private Ryan",
+	  description:
+		"Following the Normandy Landings, a group of U.S. soldiers go behind enemy lines to retrieve a paratrooper whose brothers have been killed in action.",
+	  releaseYear: 1998,
+	  directors: ["Steven Spielberg"],
+	  topCast: ["Matt Damon", "Tom Hanks", "Tom Sizemore"],
+	  countries: ["United States"],
+	  trailerEmbedUrl: "https://www.youtube.com/embed/9CiW_DgxCnQ") {
+		id
+	}
+	_2: addMovie(
+	  title: "Jurassic Park",
+	  description:
+		"A pragmatic paleontologist touring an almost complete theme park on an island in Central America is tasked with protecting a couple of kids after a power failure causes the park's cloned dinosaurs to run loose.",
+	  releaseYear: 1993,
+	  directors: ["Steven Spielberg"],
+	  topCast: ["Jeff Goldblum", "Laura Dern", "Sam Neill"],
+	  countries: ["United States"],
+	  trailerEmbedUrl: "https://www.youtube.com/embed/QWBKEmWWL38") {
+		id
+	}
+	_3: addMovie(
+	  title: "Jurassic Park III",
+	  description:
+		"A decidedly odd couple with ulterior motives convince Dr. Grant to go to Isla Sorna for a holiday, but their unexpected landing startles the island's new inhabitants.",
+	  releaseYear: 2001,
+	  directors: ["Joe Johnston"],
+	  topCast: ["Tea Leoni", "Sam Neill", "William H. Macy"],
+	  countries: ["United States"],
+	  trailerEmbedUrl: "https://www.youtube.com/embed/gjIaV6CU0wA") {
+		id
+	}
+	_4: addMovie(
+	  title: "Jurassic World",
+	  description:
+		"A new theme park, built on the original site of Jurassic Park, creates a genetically modified hybrid dinosaur, the Indominus Rex, which escapes containment and goes on a killing spree.",
+	  releaseYear: 2015,
+	  directors: ["Colin Trevorrow"],
+	  topCast: ["Bryce Dallas Howard", "Ty Simpkins", "Chris Pratt"],
+	  countries: ["United States"],
+	  trailerEmbedUrl: "https://www.youtube.com/embed/RFinNxS5KN4") {
+		id
+	}
+	_5: addMovie(
+	  title: "Finding Nemo",
+	  description:
+		"After his son is captured in the Great Barrier Reef and taken to Sydney, a timid clownfish sets out on a journey to bring him home.",
+	  releaseYear: 2003,
+	  directors: ["Lee Unkrich", "Andrew Stanton"],
+	  topCast: ["Alexander Gould", "Ellen DeGeneres", "Albert Brooks"],
+	  countries: ["United States", "Japan"],
+	  trailerEmbedUrl: "https://www.youtube.com/embed/9oQ628Seb9w") {
+		id
+	}
+	_6: addMovie(
+	  title: "Iron Man",
+	  description:
+		"After being held captive in an Afghan cave, billionaire engineer Tony Stark creates a unique weaponized suit of armor to fight evil.",
+	  releaseYear: 2008,
+	  directors: ["Jon Favreau"],
+	  topCast: ["Gwyneth Paltrow", "Terrence Howard", "Robert Downey Jr."],
+	  countries: ["United States", "Canada"],
+	  trailerEmbedUrl: "https://www.youtube.com/embed/8ugaeA-nMTc") {
+		id
+	}
+	_7: addMovie(
+	  title: "Iron Man 3",
+	  description:
+		"When Tony Stark's world is torn apart by a formidable terrorist called the Mandarin, he starts an odyssey of rebuilding and retribution.",
+	  releaseYear: 2013,
+	  directors: ["Shane Black"],
+	  topCast: ["Guy Pearce", "Gwyneth Paltrow", "Robert Downey Jr."],
+	  countries: ["United States"],
+	  trailerEmbedUrl: "https://www.youtube.com/embed/f_h95mEd4TI") {
+		id
+	}
+	_8: addMovie(
+	  title: "The Avengers",
+	  description:
+		"Earth's mightiest heroes must come together and learn to fight as a team if they are going to stop the mischievous Loki and his alien army from enslaving humanity.",
+	  releaseYear: 2012,
+	  directors: ["Joss Whedon"],
+	  topCast: ["Scarlett Johansson", "Chris Evans", "Robert Downey Jr."],
+	  countries: ["United States"],
+	  trailerEmbedUrl: "https://www.youtube.com/embed/eOrNdBpGMv8") {
+		id
+	}
+	_9: addMovie(
+	  title: "Avengers: Infinity War",
+	  description:
+		"The Avengers and their allies must be willing to sacrifice all in an attempt to defeat the powerful Thanos before his blitz of devastation and ruin puts an end to the universe.",
+	  releaseYear: 2018,
+	  directors: ["Anthony Russo", "Joe Russo"],
+	  topCast: ["Mark Ruffalo", "Chris Hemsworth", "Robert Downey Jr."],
+	  countries: ["United States"],
+	  trailerEmbedUrl: "https://www.youtube.com/embed/6ZfuNTqbHE8") {
+		id
+	}
+}

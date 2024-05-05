@@ -1,0 +1,90 @@
+.loginsignup-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+#loginsignup-logo {
+  font-size: 100px;
+}
+
+.loginsignup-form {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.loginsignup-field {
+  color: var(--color-3);
+  font-size: 15px;
+  letter-spacing: 1px;
+  border-color: var(--main-color);
+  padding: 11px 22px;
+  border: none;
+  border-radius: 20px;
+  outline: none;
+  box-sizing: border-box;
+  border: 2px solid rgb(0, 0, 0, 0.2);
+  text-align: center;
+  margin-bottom: 29px;
+}
+
+.loginsignup-h3 {
+  font-weight: bold;
+  font-size: 25px;
+  text-align: center;
+}
+
+.loginsignup-button {
+  padding-top: 11px;
+  padding-bottom: 11px;
+  cursor: pointer;
+  outline: none;
+  background-color: var(--main-color);
+  border: 0;
+  color: #ffffff;
+  font-weight: bold;
+  transition: var(--transition-1);
+  box-shadow: var(--shadow);
+}
+
+.loginsignup-button:hover {
+  background-color: var(--color-2);
+}
+
+.loginsignup-button, .loginsignup-span {
+  border-radius: 25px;
+}
+
+.loginsignup-span {
+  display: block;
+  padding: 0.4em 0.2em;
+  font-size: 16px;
+}
+
+.loginsignup-question {
+  font-weight: bold;
+  font-size: 102%;
+}
+
+.loginsignup-link {
+  color: var(--color-3);
+  transition: var(--transition-2);
+}
+
+.loginsignup-link:hover {
+  color: var(--color-2);
+}
+
+.loginsignup-error-message {
+  text-align: center;
+  color: var(--error-message-color);
+  margin-top: -11.1%;
+}
+
+@media only screen and (max-width: 310px) {
+  .loginsignup-container {
+    width: 310px;
+  }
+}

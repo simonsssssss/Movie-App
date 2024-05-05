@@ -1,0 +1,24 @@
+:root {
+  --main-color: #560319; /* custom property declaration */
+  --color-1: #f0f0f0;
+  --color-2: #ac6c6c;
+  --color-3: #000000;
+  --transition-1: background-color 0.06s linear;
+  --transition-2: color 0.06s linear;
+  --transition-3: transform 0.06s linear;
+  --error-message-color: rgb(209, 35, 35);
+  --shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.ReactModal__Overlay {
+  opacity: 0;
+  transition: opacity 60ms linear;
+}
+
+.ReactModal__Overlay--after-open {
+  opacity: 1;
+}
+
+.ReactModal__Overlay--before-close {
+  opacity: 0;
+}

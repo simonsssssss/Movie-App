@@ -1,0 +1,101 @@
+.welcome-container {
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  height: 100vh;
+}
+
+.welcome-left {
+  background-color: var(--main-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: var(--shadow);
+}
+
+.welcome-item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 10px;
+}
+
+#welcome-icon {
+  font-size: 34px;
+  color: #ffffff;
+}
+
+.welcome-label {
+  font-size: 23px;
+  font-weight: 500;
+  color: #ffffff;
+  margin: 10px;
+}
+
+.welcome-right {
+  text-align: center;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+#welcome-logo {
+  font-size: 100px;
+  margin-bottom: 40px;
+}
+
+.welcome-btn-sign-up {
+  display: block;
+  width: 308px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 10px;
+  background-color: var(--main-color);
+  color: #ffffff;
+  border-radius: 100px;
+  text-decoration: none;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  transition: var(--transition-1);
+  box-shadow: var(--shadow);
+}
+
+.welcome-btn-sign-up:hover {
+  background-color: var(--color-2);
+}
+
+.welcome-btn-login {
+  display: block;
+  width: 308px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #ffffff;
+  color: var(--main-color);
+  border-radius: 100px;
+  font-size: 15px;
+  font-weight: bold;
+  text-decoration: none;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  transition: var(--transition-1);
+  box-shadow: var(--shadow);
+}
+
+.welcome-btn-login:hover {
+  background-color: var(--color-1);
+}
+
+.welcome-h1 {
+  font-size: 200%;
+  font-weight: bold;
+  margin-bottom: 40px;
+}
+
+.welcome-btn-sign-up, .welcome-btn-login {
+  font-size: 120%;
+}
+
+@media only screen and (max-width: 670px) {
+  .welcome-container {
+    width: 670px;
+    height: 400vh;
+  }
+}
