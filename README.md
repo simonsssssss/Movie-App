@@ -16,7 +16,7 @@ Aplikacja wykorzystuje następujące technologie:
 
 ## Filmy demonstracyjne
 ### 1. Rejestracja
-### 2. Rejestracja z użyciem istniejącego adresu email
+### 2. Rejestracja z użyciem istniejącego adresu e-mail
 ### 3. Logowanie
 ### 4. Wylogowanie
 ### 5. Strona główna
