@@ -197,8 +197,13 @@
     border-radius: 4px;
     background-color: var(--error-message-color);
     font-size: 17px;
+    font-weight: bold;
     transition: var(--transition-1);
     border: 0;
+}
+
+.movies-account-delete-button:hover {
+    background-color: lightcoral;
 }
 
 #movies-go-to-top-of-page-button {
