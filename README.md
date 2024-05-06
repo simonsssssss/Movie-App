@@ -15,11 +15,11 @@ Aplikacja wykorzystuje następujące technologie:
 - [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS)
 
 ## Filmy demonstracyjne
-### 1. Signing up
-### 2. Signing up with an existing email
-### 3. Logging in
-### 4. Logging out
-### 5. The "All Movies" page
-### 6. Searching for movies
-### 7. Updating account details
-### 8. Deleting an account
+### 1. Rejestracja
+### 2. Rejestracja z użyciem istniejącego adresu email
+### 3. Logowanie
+### 4. Wylogowanie
+### 5. Strona główna
+### 6. Wyszukiwanie informacji o filmach
+### 7. Edycja danych konta
+### 8. Usunięcie konta
