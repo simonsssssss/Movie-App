@@ -85,13 +85,14 @@ export default function Movies() {
   const [mutateDeleteUser] = useMutation(DELETE_USER_MUTATION);
   const [key, setKey] = useState(null);
   const [findMoviesQueryFunction] = useLazyQuery(FIND_MOVIES_QUERY);
-  const [foundMoviesData, setFoundMoviesData] = useState(null);
+  const [foundMoviesData, setFoundMoviesData, foundMoviesDataRef] = useState(null);
   const [searchPhrase, setSearchPhrase] = useState(null);
   const [foundMoviesImages, setFoundMoviesImages] = useState(null);
   const [allMoviesTreshold, setAllMoviesTreshold] = useState(17);
   const [showAllMoviesLoadMoreButton, setShowAllMoviesLoadMoreButton] = useState(false);
-  const [foundMoviesTreshold, setFoundMoviesTreshold] = useState(17);
+  const [foundMoviesTreshold, setFoundMoviesTreshold] = useState(10);
   const [showFoundMoviesLoadMoreButton, setShowFoundMoviesLoadMoreButton] = useState(false);
+  const [step, setStep] = useState(10);
   useEffect(() => {
     async function downloadMoviesImages() {
       try {
@@ -102,7 +103,7 @@ export default function Movies() {
         setMoviesImages(moviesImagesResponseData);
       }
       catch(e) {
-        console.log('Error downloading movies images');
+        console.log(e);
       }
     }
     downloadMoviesImages();
@@ -199,6 +200,7 @@ export default function Movies() {
     '3','4','5','6','7','8','9',':',';',',','.',
     '?','!','/',' ','Enter','Backspace'];
   async function findMovies(e: any) {
+    setFoundMoviesTreshold(10);
     if(e.target.value.length === 0) {
       setFoundMoviesData(null);
       setSearchPhrase(null);
@@ -229,9 +231,12 @@ export default function Movies() {
           });
         });
         setFoundMoviesImages(foundMoviesImages);
+        if(foundMoviesTreshold + step >= foundMoviesData?.length - 1) {
+          setShowFoundMoviesLoadMoreButton(false);
+        }
       }
       catch(e) {
-        console.log('Error finding movies');
+        console.log(e);
       }
     }
   }
@@ -265,7 +270,6 @@ export default function Movies() {
     }
   }
   function foundMoviesLoadMore() {
-    const step = 18;
     setFoundMoviesTreshold(foundMoviesTreshold + step);
     if(foundMoviesTreshold + step >= foundMoviesData?.length - 1) {
       setShowFoundMoviesLoadMoreButton(false);
